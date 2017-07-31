@@ -2,8 +2,20 @@
   "name": "wets-cli",
   "version": "0.0.1",
   "description": "Simple CLI for scaffolding wets projects",
-  "main": "dist/index.js",
+  "bin": {
+    "wets": "bin/wets.js"
+  },
   "repository": "git@github.com:wetsjs/wets-cli.git",
   "author": "linguofeng <linguofeng@msn.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/yargs": "^8.0.1",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {
+    "yargs": "^8.0.2"
+  },
+  "scripts": {
+    "build": "tsc -p ."
+  }
 }
